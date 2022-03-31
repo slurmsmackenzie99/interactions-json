@@ -10,7 +10,7 @@ app.listen(PORT, () => {
 
 const csv = require("csvtojson");
 
-app.get("/*", (req, res) => {
+app.get("/api", (req, res) => {
   const csvFilePath = "./resources/interactions.csv";
   csv()
     .fromFile(csvFilePath)
