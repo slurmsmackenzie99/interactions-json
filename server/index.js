@@ -18,22 +18,8 @@ app.get("/api", (req, res) => {
       var stringToDisplay = JSON.stringify(jsonObj);
       res.setHeader("Content-Type", "application/json");
       res.setHeader("Access-Control-Allow-Origin", "*");
-      // axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
       res.write(stringToDisplay);
       res.end();
     });
 
-  // res.json({ message: "Hello from server!" });
-  // res.send(JSON.stringify(jsonObj));
 });
-
-// app.get("/api", (req, res) => {
-//     getRegister();
-//     res.json({ message: "Hello from server!" });
-//     // res.send(JSON.stringify(jsonObj));
-//   });
-
-// app.get("/json", (req, res) => {
-//     console.log(jsonObj);
-//     res.json({ key: "value" });
-//   });
